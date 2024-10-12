@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get all clan glyphs and modals
   const glyphs = document.querySelectorAll(".clan_glyph");
   const modals = document.querySelectorAll(".clan_modal");
+  const closeButtons = document.querySelectorAll(".modal_close");
 
   // Loop through each glyph and attach a click event listener
   glyphs.forEach((glyph) => {
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const modal = document.getElementById(modalId);
 
       // Fetch the HTML content based on the glyph clicked
-      const clanName = this.id; // e.g., "brujah", "gangrel", etc.
+      const clanName = this.id; // e.g., "brujah", "gangrel"
       fetch(`clans/${clanName}.html`)
         .then((response) => response.text())
         .then((data) => {
@@ -21,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
           // Display the modal after loading the content
           modal.style.display = "block";
+
+          // Re-attach the close button listener (since it may have been replaced by fetched content)
+          const closeButton = modal.querySelector(".modal_close");
+          closeButton.addEventListener("click", function () {
+            modal.style.display = "none";
+          });
         })
         .catch((error) => {
           console.error("Error loading modal content:", error);

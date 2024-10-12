@@ -28,7 +28,7 @@ header {
   padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  column-gap: 10px;
+  gap: 10px;
 }
 
 .header_link {
@@ -106,8 +106,9 @@ main {
   margin: 10% auto; /*15% from top and centred*/
   padding: 20px;
   border: 6px double var(--flesh);
-  width: 80%;
+  width: 60%;
   border-radius: 20px;
+  position: relative;
 }
 
 .clan_disciplines,
@@ -116,15 +117,37 @@ main {
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .clan_sole_discipline {
   grid-template-columns: 1fr;
 }
 
+.modal_close {
+  color: var(--flesh);
+  font-size: x-large;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+  color: var(--bone);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* for smartphones etc. */
 @media only screen and (max-width: 600px) {
+  header {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+  }
+
   .clan_menu {
     grid-template-columns: 250px;
     grid-template-rows: repeat(9, 225px);
@@ -138,5 +161,18 @@ main {
   .clan_modal {
     margin: auto;
     place-content: center;
+  }
+
+  .clan_modal_content {
+    width: 80%;
+  }
+
+  .clan_disciplines {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .discipline_glyph {
+    padding-bottom: 30px;
   }
 }
