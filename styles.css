@@ -1,0 +1,36 @@
+:root {
+  --blood: #ae0c00;
+  --bone: #f2e2e0;
+  --flesh: #a56a67;
+  --night: #110100;
+}
+
+body {
+  background-color: var(--night);
+  color: var(--blood);
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+}
+
+a {
+  color: var(--bone);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+strong {
+  color: var(--flesh);
+}
+
+header {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
+}
+
+main {
+  padding-top: 50px;
+}
