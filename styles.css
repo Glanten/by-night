@@ -15,13 +15,13 @@ body {
 }
 
 a {
-  color: var(--bone);
+  color: var(--flesh);
   text-decoration: none;
   font-weight: bold;
 }
 
-strong {
-  color: var(--flesh);
+a:hover {
+  color: var(--bone);
 }
 
 header {
@@ -33,4 +33,87 @@ header {
 
 main {
   padding-top: 50px;
+}
+
+.clan_menu {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 75px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+}
+
+.clan_glyph {
+  height: 200px;
+  display: block;
+  text-align: center;
+}
+
+.clan_glyph:hover {
+  cursor: pointer;
+}
+
+.clan_glyph img {
+  height: 100%;
+}
+
+.clan_name {
+  display: none;
+  font-size: x-large;
+}
+
+.clan_glyph:hover .clan_name {
+  display: block;
+}
+
+/* CLAN MODALS */
+/* modal background */
+.clan_modal {
+  display: none;
+  position: fixed; /*stay in place*/
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /*enable scroll if required*/
+  background-color: #000; /*fallback colour*/
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.clan_modal_content {
+  background-color: #fefefe;
+  margin: 15% auto; /*15% from top and centred*/
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal_close {
+  color: #aaa;
+  float: right;
+  font-size: large;
+  font-weight: bold;
+}
+
+.modal_close:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* for smartphones etc. */
+@media only screen and (max-width: 600px) {
+  .clan_menu {
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(9, 225px);
+    gap: 50px;
+  }
+
+  .clan_name {
+    font-size: large;
+  }
 }
