@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="Content-Type-Style" content="text/css" />
+    <meta name="Content-Type-Style" content="text/php" />
     <meta name="Content-Type-Script" content="text/javascript" />
     <title>
-        by Night: Dice
+        By Night
     </title>
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
     <meta name="revisit-after" content="7 days" />
@@ -23,25 +23,7 @@
         rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <!-- favicons: -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png" />
 </head>
-
-<body>
-    <header>
-        <div class="header_link"><a href="/index.html">Home</a></div>
-        <div class="header_link"><a href="/clans.html">Clans</a></div>
-        <div class="header_link"><a href="/disciplines.html">Disciplines</a></div>
-        <div class="header_link"><a href="/hunger.html">Hunger</a></div>
-        <div class="header_link"><a href="/dice.html">Dice</a></div>
-        <div class="header_link"><a href="/about.html">About</a></div>
-    </header>
-    <main>
-    </main>
-    <footer>
-    </footer>
-</body>
-
-</html>
