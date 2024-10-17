@@ -7,3 +7,4 @@
         <div class="header_link"><a href="/dice.html">Dice</a></div>
         <div class="header_link"><a href="/about.html">About</a></div>
     </header>
+    <main>
