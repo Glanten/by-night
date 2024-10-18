@@ -99,7 +99,8 @@ main {
 
 /* CLAN MODALS */
 /* modal background */
-.clan_modal {
+.clan_modal,
+.discipline_modal {
   display: none;
   position: fixed; /*stay in place*/
   z-index: 1;
@@ -112,7 +113,8 @@ main {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.clan_modal_content {
+.clan_modal_content,
+.discipline_modal_content {
   background-color: var(--night);
   margin: 10% auto; /*15% from top and centred*/
   padding: 20px;
@@ -152,7 +154,7 @@ main {
 }
 
 /* for smartphones etc. */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 890px) {
   header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -165,16 +167,24 @@ main {
     gap: 50px;
   }
 
+  .discipline_menu {
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(11, 225px);
+    gap: 50px;
+  }
+
   .clan_name {
     font-size: large;
   }
 
-  .clan_modal {
+  .clan_modal,
+  .discipline_modal {
     margin: auto;
     place-content: center;
   }
 
-  .clan_modal_content {
+  .clan_modal_content,
+  .discipline_modal_content {
     width: 80%;
   }
 
