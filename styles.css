@@ -26,31 +26,44 @@ a:hover {
 
 header {
   padding-top: 20px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
 }
 
-.accordion {
-  background-color: #eee;
-  color: #444;
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--bone);
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   border: none;
   outline: none;
   transition: 0.4s;
 }
 
-.accordion:hover {
-  background-color: #ccc;
+.navbar:hover .navbar_dot {
+  background-color: var(--bone);
 }
 
-.panel {
+.navbar_dot {
+  margin-top: 8px;
+  height: 12px;
+  width: 12px;
+  background-color: var(--blood);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.navlinks {
   padding: 0 18px;
-  background-color: white;
-  display: none;
+  /* display: none; */
+  display: block;
+  visibility: hidden;
   overflow: hidden;
 }
 
@@ -181,7 +194,23 @@ main {
   header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    gap: 5px;
+    padding-bottom: 0px;
+  }
+
+  .navbar {
+    padding: 6px;
+  }
+
+  .navbar_dot {
+    margin-top: 4px;
+    height: 6px;
+    width: 6px;
+  }
+
+  main {
+    padding-top: 10px;
+    color: var(--bone); /* change colour of text for better readability */
   }
 
   .clan_menu {
@@ -218,5 +247,10 @@ main {
 
   .discipline_glyph {
     padding-bottom: 30px;
+  }
+
+  /* change colour of glyphs for better readability */
+  .discipline_glyph img {
+    filter: brightness(0) saturate(50%) invert(91%) sepia(17%);
   }
 }
