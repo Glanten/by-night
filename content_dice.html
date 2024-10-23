@@ -20,11 +20,16 @@
             When asked to roll a pool of dice (e.g. "<em>roll Willpower</em>"), you roll as many dice as you have • in a
             Trait and count the number of successes
         </p>
-        <div class="dice_pool">
-            <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(12deg);" />
-            <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(-31deg);" />
-            <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(22deg);" />
-        </div>
+        <figure>
+            <div class="dice_pool">
+                <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(12deg);" />
+                <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(-31deg);" />
+                <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(22deg);" />
+            </div>
+            <figcaption>
+                Above is a ••• dice pool - any dice that roll 6 or higher are successes
+            </figcaption>
+        </figure>
         <p>
             Other checks are rolled as dice pooled from multiple Traits (e.g. "<em>roll Intelligence + Technology</em>")
             which means you roll as many dice as you have in both Traits combined
@@ -32,7 +37,20 @@
         <h3>Criticals</h3>
         <p>
             When rolling a pool, every pair of 0s you roll is a <strong>Critical Success</strong> and counts as an
-            additional 2 successes.
+            additional 2 successes
+        </p>
+        <h3>Tests</h3>
+        <p>
+            A roll is usually made as a test against a difficulty set by the Storyteller, or as an opposed roll against
+            another character's roll
+        </p>
+        <p>
+            If you roll successes equal to or over the difficulty, or roll more successes than your opponent, you pass
+            the test
+        </p>
+        <p>
+            It may be important to pay attention to the number of successes you get on a roll, as some tests,
+            Disciplines, etc. grow in effectiveness the greater the margin of successes rolled
         </p>
     </section>
 
@@ -40,11 +58,41 @@
         <h2>Hunger Dice</h2>
     </section>
     <p>
-        Writing...
+        When your character suffers levels of Hunger, they exchange regular dice in their dice pool with <strong>Hunger
+            Dice</strong> on a one-to-one basis
     </p>
-    <div class="dice_pool">
-        <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(-24deg);" />
-        <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(12deg);" />
-        <img src="images/d10.svg" alt="a d10 dice" class="dice_hunger" style="transform: rotate(-6deg);" />
-    </div>
+    <figure>
+        <div class="dice_pool">
+            <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(-24deg);" />
+            <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(12deg);" />
+            <img src="images/d10.svg" alt="a hunger dice" class="dice_hunger" style="transform: rotate(-6deg);" />
+        </div>
+        <figcaption>
+            Above is the ••• dice pool of a character with 1 Hunger - one of the regular dice has been swapped out for a
+            Hunger Dice
+        </figcaption>
+    </figure>
+    <p>
+        Hunger Dice do not replace dice rolled for Humanity, Rouse Checks, or Willpower
+    </p>
+    <p>
+        Hunger Dice function as regular dice except in certain circumstances
+    </p>
+    <h3>Messy Critical</h3>
+    <p>
+        If a roll is a <strong>success</strong> and any Hunger Dice have rolled a <strong>0</strong>, the result is a
+        <strong>Messy Critical</strong>
+    </p>
+    <p>
+        You pass the test, but your Hunger compels you to act in a rash, destructive, or otherwise disadvantageous
+        manner lacking foresight, subtlety, or self-control
+    </p>
+    <h3>Bestial Failure</h3>
+    <p>
+        If a roll is a <strong>failure</strong> and any Hunger Dice have rolled a <strong>1</strong>, the result is a
+        <strong>Bestial Failure</strong>
+    </p>
+    <p>
+        You fail the test, and there is an additional penalty, in the form of a Compulsion, due to the Hunger within you
+    </p>
 </div>

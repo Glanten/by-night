@@ -166,6 +166,10 @@ main {
     contrast(106%);
 }
 
+figcaption {
+  text-align: center;
+}
+
 .clan_menu {
   display: grid;
   grid-template-columns: repeat(3, 250px);
