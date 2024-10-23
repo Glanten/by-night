@@ -24,9 +24,7 @@ a:hover {
   color: var(--bone);
 }
 
-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.nav_container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
@@ -36,7 +34,9 @@ header {
   background-color: rgba(0, 0, 0, 0);
   color: var(--bone);
   cursor: pointer;
-  padding: 18px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 100%;
   text-align: center;
   border: none;
@@ -61,7 +61,6 @@ header {
 
 .navlinks {
   padding: 0 18px;
-  /* display: none; */
   display: block;
   visibility: hidden;
   overflow: hidden;
@@ -72,7 +71,7 @@ header {
 }
 
 main {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .background_ankh {
@@ -96,6 +95,14 @@ main {
   max-width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.index_section {
+  border-style: outset;
+  border-color: var(--blood);
+  border-width: 2px;
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
 }
 
 .index_accordion {
@@ -254,10 +261,13 @@ main {
 /* for smartphones etc. */
 @media only screen and (max-width: 890px) {
   header {
+    height: fit-content;
+  }
+
+  .nav_container {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 5px;
-    padding-bottom: 0px;
   }
 
   .navbar {
@@ -271,14 +281,17 @@ main {
   }
 
   main {
-    padding-top: 10px;
-    /* color: var(--bone); change colour of text for better readability */
+    padding-top: 0px;
   }
 
   .index_container {
     max-width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .index_table {
+    font-size: medium;
   }
 
   .clan_menu {
@@ -320,5 +333,14 @@ main {
   /* change colour of glyphs for better readability */
   .discipline_glyph img {
     filter: brightness(0) saturate(50%) invert(91%) sepia(17%);
+  }
+}
+
+/* for wide screens */
+@media only screen and (min-width: 1000px) {
+  .index_container {
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
