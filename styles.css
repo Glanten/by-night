@@ -144,6 +144,28 @@ main {
   padding: 10px;
 }
 
+.dice_pool {
+  text-align: center;
+}
+
+.dice_normal {
+  height: 50px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  filter: brightness(0) saturate(100%) invert(43%) sepia(9%) saturate(190%) hue-rotate(314deg) brightness(105%)
+    contrast(79%);
+}
+
+.dice_hunger {
+  height: 50px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  filter: brightness(0) saturate(100%) invert(12%) sepia(76%) saturate(5051%) hue-rotate(360deg) brightness(89%)
+    contrast(106%);
+}
+
 .clan_menu {
   display: grid;
   grid-template-columns: repeat(3, 250px);
