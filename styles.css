@@ -75,6 +75,68 @@ main {
   padding-top: 50px;
 }
 
+.background_ankh {
+  z-index: -1;
+  position: fixed;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  max-height: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.backdrop_image {
+  opacity: 0.1;
+  max-width: 90%;
+  height: auto;
+}
+
+.index_container {
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.index_accordion {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--blood);
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: "Crimson Text", serif;
+  font-size: large;
+}
+
+.index_accordion:hover,
+.index_accordion:active {
+  color: var(--flesh);
+}
+
+.index_panel {
+  display: none;
+  overflow: hidden;
+}
+
+.index_table {
+  max-width: 50%;
+  min-width: fit-content;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.index_table th,
+.index_table td {
+  padding: 10px;
+}
+
 .clan_menu {
   display: grid;
   grid-template-columns: repeat(3, 250px);
@@ -210,7 +272,13 @@ main {
 
   main {
     padding-top: 10px;
-    color: var(--bone); /* change colour of text for better readability */
+    /* color: var(--bone); change colour of text for better readability */
+  }
+
+  .index_container {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .clan_menu {
