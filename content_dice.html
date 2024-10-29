@@ -4,21 +4,10 @@
         All dice rolled should be ten-sided dice (d10)
     </p>
     <section>
-        <h2>Success and Failure</h2>
+        <h2>Dice Pools</h2>
         <p>
-            A result of 1 to 5 on a dice is a <strong>failure</strong>
-        </p>
-        <p>
-            A result of 6 to 0 on a dice is a <strong>success</strong>
-        </p>
-        <h3>Dice Pools</h3>
-        <p>
-            Attributes, Skills, Disciplines, and other Traits are measured in dots • each of which represents one dice
-            in a character's dice pool
-        </p>
-        <p>
-            When asked to roll a pool of dice (e.g. "<em>roll Willpower</em>"), you roll as many dice as you have • in a
-            Trait and count the number of successes
+            When asked to roll (e.g. "<em>roll Willpower</em>"), you roll as many dice as you have dots (•) in the
+            appropriate Trait
         </p>
         <figure>
             <div class="dice_pool">
@@ -27,72 +16,78 @@
                 <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(22deg);" />
             </div>
             <figcaption>
-                Above is a ••• dice pool - any dice that roll 6 or higher are successes
+                Above is a (•••) dice pool
             </figcaption>
         </figure>
         <p>
-            Other checks are rolled as dice pooled from multiple Traits (e.g. "<em>roll Intelligence + Technology</em>")
-            which means you roll as many dice as you have in both Traits combined
+            Many checks are rolled as a pool of dice from a pair of Traits (e.g. "<em>roll Wits + Technology</em>")
+            which means you roll the dice for both traits and total the result
+        </p>
+        <h3>Wins and Losses</h3>
+        <p>
+            A result of 6 to 10 on a dice is a <strong>win</strong>
+        </p>
+        <p>
+            A roll with no wins is known as a <strong>Total Failure</strong>
         </p>
         <h3>Criticals</h3>
         <p>
-            When rolling a pool, every pair of 0s you roll is a <strong>Critical Success</strong> and counts as an
-            additional 2 successes
+            When rolling a pool, every <em>pair</em> of 0s you roll is a <strong>Critical</strong> and counts as an
+            <em>additional</em> 2 wins
         </p>
-        <h3>Tests</h3>
+        <h2>Tests</h2>
         <p>
-            A roll is usually made as a test against a difficulty set by the Storyteller, or as an opposed roll against
-            another character's roll
-        </p>
-        <p>
-            If you roll successes equal to or over the difficulty, or roll more successes than your opponent, you pass
-            the test
+            A roll's <strong>Difficulty</strong> is set by the Storyteller (or by an another character's opposed roll)
         </p>
         <p>
-            It may be important to pay attention to the number of successes you get on a roll, as some tests,
-            Disciplines, etc. grow in effectiveness the greater the margin of successes rolled
+            If you roll enough wins to meet or beat the Difficulty (or roll more wins than your opponent), your
+            character succeeds
+        </p>
+        <p>
+            It may be important to pay attention to the number of wins by which you exceed the Difficulty of a roll;
+            some tests, Disciplines, etc. grow in effectiveness according to a roll's margin of success
         </p>
     </section>
 
     <section>
         <h2>Hunger Dice</h2>
+        <p>
+            When your character suffers levels of Hunger, they exchange regular dice in their dice pool with
+            <strong>Hunger Dice</strong> on a one-to-one basis
+        </p>
+        <figure>
+            <div class="dice_pool">
+                <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(-24deg);" />
+                <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(12deg);" />
+                <img src="images/d10.svg" alt="a hunger dice" class="dice_hunger" style="transform: rotate(-6deg);" />
+            </div>
+            <figcaption>
+                Above is a ••• dice pool of a character with 1 Hunger - one of the regular dice has been swapped out for
+                a Hunger Dice
+            </figcaption>
+        </figure>
+        <p>
+            Hunger Dice do not replace dice rolled for Humanity, Rouse Checks, or Willpower
+        </p>
+        <p>
+            Hunger Dice function as regular dice except in certain circumstances:
+        </p>
+        <h3>Messy Critical</h3>
+        <p>
+            If a roll is a <strong>success</strong> and any Hunger Dice have rolled a <strong>10</strong>, the result is
+            a <strong>Messy Critical</strong>
+        </p>
+        <p>
+            Your character succeeds, but their Hunger compels them to act in a rash, destructive, or otherwise
+            disadvantageous manner lacking foresight, subtlety, or self-control
+        </p>
+        <h3>Bestial Failure</h3>
+        <p>
+            If a roll is a <strong>failure</strong> and any Hunger Dice have rolled a <strong>1</strong>, the result is
+            a <strong>Bestial Failure</strong>
+        </p>
+        <p>
+            Your character fails and faces additional drawbacks in the form of a Compulsion due to their Hunger
+        </p>
     </section>
-    <p>
-        When your character suffers levels of Hunger, they exchange regular dice in their dice pool with <strong>Hunger
-            Dice</strong> on a one-to-one basis
-    </p>
-    <figure>
-        <div class="dice_pool">
-            <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(-24deg);" />
-            <img src="images/d10.svg" alt="a d10 dice" class="dice_normal" style="transform: rotate(12deg);" />
-            <img src="images/d10.svg" alt="a hunger dice" class="dice_hunger" style="transform: rotate(-6deg);" />
-        </div>
-        <figcaption>
-            Above is the ••• dice pool of a character with 1 Hunger - one of the regular dice has been swapped out for a
-            Hunger Dice
-        </figcaption>
-    </figure>
-    <p>
-        Hunger Dice do not replace dice rolled for Humanity, Rouse Checks, or Willpower
-    </p>
-    <p>
-        Hunger Dice function as regular dice except in certain circumstances
-    </p>
-    <h3>Messy Critical</h3>
-    <p>
-        If a roll is a <strong>success</strong> and any Hunger Dice have rolled a <strong>0</strong>, the result is a
-        <strong>Messy Critical</strong>
-    </p>
-    <p>
-        You pass the test, but your Hunger compels you to act in a rash, destructive, or otherwise disadvantageous
-        manner lacking foresight, subtlety, or self-control
-    </p>
-    <h3>Bestial Failure</h3>
-    <p>
-        If a roll is a <strong>failure</strong> and any Hunger Dice have rolled a <strong>1</strong>, the result is a
-        <strong>Bestial Failure</strong>
-    </p>
-    <p>
-        You fail the test, and there is an additional penalty, in the form of a Compulsion, due to the Hunger within you
-    </p>
 </div>
