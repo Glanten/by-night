@@ -357,9 +357,9 @@ figcaption {
   }
 
   /* change colour of glyphs for better readability */
-  .discipline_glyph img {
+  /* .discipline_glyph img {
     filter: brightness(0) saturate(50%) invert(91%) sepia(17%);
-  }
+  } */
 }
 
 /* for wide screens */
