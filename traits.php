@@ -10,6 +10,7 @@
     <?php include 'traits/bloodpotency.html';?>
     <?php include 'traits/advantages.html';?>
     <?php include 'traits/chronicle.html';?>
+    <?php include 'traits/predator.html';?>
 </div>
 <script src="index.js"></script>
 <?php include 'footer.php';?>
