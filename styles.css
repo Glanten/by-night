@@ -172,6 +172,10 @@ figcaption {
   text-align: center;
 }
 
+.indented {
+  padding-left: 15px;
+}
+
 .clan_menu {
   display: grid;
   grid-template-columns: repeat(3, 250px);
@@ -356,6 +360,10 @@ figcaption {
 
   .discipline_glyph {
     padding-bottom: 30px;
+  }
+
+  .indented {
+    padding-left: 9px;
   }
 
   /* change colour of glyphs for better readability */
